@@ -1,0 +1,7 @@
+default-ip               : 127.0.0.1
+default-port             : 8000
+
+name                     : AniJS-Test
+version                  : 1.01
+secret                   : your-secret-key
+author                   : Yolier Galan Tasse <gallegogt@gmail.com>

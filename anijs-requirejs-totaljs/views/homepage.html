@@ -1,0 +1,11 @@
+@{meta('title', 'description', 'keywords')}
+
+<header data-anijs="if: click, do: flipInY animated, after: removeAnim">
+        header (Click here)
+</header>
+<div id="main" data-anijs="if: load, on: window, do: swing animated, after:removeAnim">
+  Main (Load window)
+</div>
+<footer data-anijs="if:click, do: hinge animated, to: #main, after: removeAnim">
+    footer (Click here)
+</footer>
