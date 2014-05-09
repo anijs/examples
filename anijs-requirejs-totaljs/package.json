@@ -1,0 +1,17 @@
+{
+  "name": "anijs-requirejs-totaljs",
+  "version": "0.1.0",
+  "description": "Basic example where is used AniJS with ReuireJS and Total.js(NodeJs web  framework).",
+  "main": "release.js",
+  "dependencies": {
+    "total.js": "^1.4.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "AniJS",
+    "RequireJS",
+    "TotalJS"
+  ],
+  "author": "Yolier Galan Tasse <gallegogt@gmail.com>",
+  "license": "MTI"
+}

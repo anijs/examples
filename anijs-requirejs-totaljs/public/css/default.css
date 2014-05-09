@@ -1,0 +1,28 @@
+/*auto*/
+body: {
+  font-size:150%;
+}
+header{
+  height:45px;
+  width:100%;
+  background-color: #2D3E50;
+  color:white;
+  font-size:150%;
+  margin-bottom: 10px;
+}
+
+#main{
+  width:100%;
+  height:400px;
+  background: #1F8DD6;
+  color:white;
+  font-size:150%;
+}
+
+footer{
+  margin-top: 10px;
+  height:40px;
+  background-color: #2D3E50;
+  color:white;
+  font-size:150%;
+}
