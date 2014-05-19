@@ -13,6 +13,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -68,10 +69,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" src="img/profile.png" alt="" data-anijs="if: scroll, on: window, do: rollIn animated, after:removeAnim, before: isRevealedOnScroll; if: load, on:window, do: rubberBand animated">
                     <div class="intro-text">
-                        <span class="name">Start Bootstrap</span>
-                        <hr class="star-light">
+                        <span class="name" data-anijs="if: animationend, on:.img-responsive, do: bounce animated, after: removeAnim">Start Bootstrap</span>
+                        <hr class="star-light" data-anijs="if: animationend, on:span.name, do: rotateIn animated, after: removeAnim">
                         <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
     </header>
 
     <section id="portfolio">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
@@ -88,7 +89,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -98,7 +99,7 @@
                         <img src="img/portfolio/cabin.png" class="img-responsive" alt="" />
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: rubberBand animated, after:removeAnim, before: isRevealedOnScroll">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -108,7 +109,7 @@
                         <img src="img/portfolio/cake.png" class="img-responsive" alt="" />
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: fadeInRightBig animated, after:removeAnim, before: isRevealedOnScroll">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -118,7 +119,7 @@
                         <img src="img/portfolio/circus.png" class="img-responsive" alt="" />
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -128,7 +129,7 @@
                         <img src="img/portfolio/game.png" class="img-responsive" alt="" />
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: flipInY animated, after:removeAnim, before: isRevealedOnScroll">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -138,7 +139,67 @@
                         <img src="img/portfolio/safe.png" class="img-responsive" alt="" />
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: fadeInRightBig animated, after:removeAnim, before: isRevealedOnScroll">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInUp animated, after:removeAnim, before: isRevealedOnScroll">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: rotateIn animated, after:removeAnim, before: isRevealedOnScroll">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInUp animated, after:removeAnim, before: isRevealedOnScroll">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -152,7 +213,7 @@
         </div>
     </section>
 
-    <section class="success" id="about">
+    <section class="success" id="about" data-anijs="if: scroll, on:window, do: rollIn animated, before: isRevealedOnScroll, after: removeAnim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -176,7 +237,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: isRevealedOnScroll, after: removeAnim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -217,7 +278,7 @@
         </div>
     </section>
 
-    <footer class="text-center">
+    <footer class="text-center" data-anijs="if: scroll, on:window, do: flipInY animated, before: isRevealedOnScroll, after: removeAnim">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
