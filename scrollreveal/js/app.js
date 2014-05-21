@@ -14,7 +14,7 @@ AniJSDefaultHelper.isRevealedOnScroll = function(e, animationContext){
 		element = animationContextBehaviorTargetList[i];
 
 		//Check if the element is visible
-		if(ScrollRevealHelper.isElementInViewport(element, 0.50)){
+		if(ScrollRevealHelper.isElementInViewport(element, 0.33)){
 		
 			//The element is not animated again if it's visible
 			if(!element.isRevealed){

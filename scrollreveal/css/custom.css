@@ -14,3 +14,59 @@
 .special-sintax{
 	font-size: 150%;
 }
+
+.ball {
+    position:relative;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounceBall 2s;
+}
+
+p.contrast a{
+    color: #FFB585;
+    text-decoration:underline;
+}
+
+@keyframes bounceBall {
+    0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    16%, 48%, 78%, 100% {
+        top: 190px;
+        animation-timing-function: ease-out;
+    }
+    32% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    62% {
+        top: 100px;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+}
+@-webkit-keyframes bounceBall {
+    0% {
+        top: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+    16%, 48%, 78%, 100% {
+        top: 190px;
+        -webkit-animation-timing-function: ease-out;
+    }
+    32% {
+        top: 50px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    62% {
+        top: 100px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    90% {
+        top: 150px;
+        -webkit-animation-timing-function: ease-in;
+    }
+}

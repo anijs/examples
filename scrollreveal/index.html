@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://anijs.github.io/">AniJS Demo</a>
+                <a class="navbar-brand" href="#page-top">AniJS Demo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,13 +59,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Winners</a>
+                        <a href="#winners">Winners</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Intro</a>
+                        <a href="#intro">Intro</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Using</a>
+                        <a href="#using">Using</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#source">Source</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/ball.png" alt="" data-anijs="if: scroll, on: window, do: rollIn animated, after:removeAnim, before: isRevealedOnScroll; if: load, on:window, do: rubberBand animated">
+                    <img class="img-responsive" src="img/ball.png" alt="" data-anijs="if: scroll, on: window, do: rollIn animated, after:removeAnim, before: isRevealedOnScroll; if: load, on: window, do: rubberBand animated, after:removeAnim; if: mouseover, do: rubberBand animated, after:removeAnim">
                     <div class="intro-text">
                         <span class="name" data-anijs="if: animationend, on:.img-responsive, do: bounce animated, after: removeAnim">Tribute</span>
                         <hr class="star-light" data-anijs="if: animationend, on:span.name, do: rotateIn animated, after: removeAnim">
@@ -89,7 +92,7 @@
         </div>
     </header>
 
-    <section id="portfolio">
+    <section id="winners">
         <div class="container" >
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -165,7 +168,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -176,7 +179,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -187,7 +190,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInLeft animated, after:removeAnim, before: isRevealedOnScroll">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -198,7 +201,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInUp animated, after:removeAnim, before: isRevealedOnScroll">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -209,7 +212,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: rotateIn animated, after:removeAnim, before: isRevealedOnScroll">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -220,7 +223,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item" data-anijs="if: scroll, on: window, do: bounceInUp animated, after:removeAnim, before: isRevealedOnScroll">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -234,7 +237,7 @@
         </div>
     </section>
 
-    <section class="success" id="about" data-anijs="if: scroll, on:window, do: rollIn animated, before: isRevealedOnScroll, after: removeAnim">
+    <section class="success" id="intro" data-anijs="if: scroll, on:window, do: rollIn animated, before: isRevealedOnScroll, after: removeAnim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -244,9 +247,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>
-                       ScrollReveal is an AniJS helper function, which allow you to make animation to the scroll elements.
-                       If you don't now nothing about AniJS, you can find documentation an examples at official site.
+                    <p class="contrast">
+                        ScrollReveal is an <a href="http://anijs.github.io/">AniJS</a> helper function, that allows you to animate several components when they enter the viewport. If you don't now nothing about <a href="http://anijs.github.io/">AniJS</a>, you can find documentation an examples at the <a href="http://anijs.github.io/">official site</a>.
                     </p>
 
                     <p class="text-center special-sintax">
@@ -264,7 +266,7 @@
         </div>
     </section>
 
-    <section id="contact" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: isRevealedOnScroll, after: removeAnim">
+    <section id="using" data-anijs="if: scroll, on:window, do: bounceInLeft animated, before: isRevealedOnScroll, after: removeAnim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -274,7 +276,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-1">
-                    <p>1 - Put the ScrollReveal helper file on your page after the AniJS core file. </p>
+                    <p>1 - Put the ScrollReveal helper file on your page after the AniJS core file.</p>
 
                 <!-- Syntax Highlight -->
  <div class="highlight highlight-xml"><pre><span class="c">&lt;!-- AniJS Core File --&gt;</span>
@@ -284,7 +286,7 @@
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"helpers/anijs-helper-scrollreveal-min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </pre></div>                <!-- End Syntax Highlight -->
 
-                    <p>2 - Add the before helper function Definition with the <strong>scrollReveal</strong> name to all element de los cuales usted espera un scrollReveal behavior. </p>
+                    <p>2- Create a declarative sentence with <strong>if</strong> , <strong>on</strong> and <strong>Before</strong> definitions as it is shown in this example:</p>
                 <!-- Syntax Highlight -->
 <div class="highlight highlight-xml"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span> <span class="na">data-anijs=</span><span class="s">"if: scroll, on: window, do: swing animated, before: scrollReveal"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </pre></div>
@@ -319,7 +321,7 @@
 </pre></div>
                 <!-- End Syntax Highlight -->
 
-                <p>More details about usar AniJS go to <a href="http://anijs.github.io/#using">AniJS Official Website</a>. Asi tambien si se quiere crear sus propios helper functions read about it in <a href="https://github.com/anijs/anijs/wiki/Writing-before-and-after-functions">Writing before and after functions </a></p>
+                <p>For more details about how to use AniJS you may go to <a href="http://anijs.github.io/#using">AniJS Official Website</a>. Besides, if yo want to create your own helper functions you may read about it in  <a href="https://github.com/anijs/anijs/wiki/Writing-before-and-after-functions">Writing before and after functions </a>.</p>
 
 
                </div>
@@ -327,42 +329,30 @@
         </div>
     </section>
 
-    <footer class="text-center" data-anijs="if: scroll, on:window, do: flipInY animated, before: isRevealedOnScroll, after: removeAnim">
+    <footer id="source" class="text-center" data-anijs="if: scroll, on:window, do: flipInY animated, before: isRevealedOnScroll, after: removeAnim">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelance</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    <div class="footer-col col-md-8 col-lg-offset-2">
+                        <h3>Source</h3>
+                            <a href="https://github.com/anijs/examples/tree/gh-pages/anijs-scrollreveal" class="btn btn-md btn-outline">
+                                Fork on GitHub <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://github.com/anijs/examples/tree/gh-pages/anijs-scrollreveal" class="btn btn-md btn-outline">
+                                Download as ZIP <i class="fa fa-floppy-o"></i>
+                            </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-below">
+        <div class="footer-below" data-anijs="if: scroll, on: window, do: fadeInUp animated, after:removeAnim, before: isRevealedOnScroll">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2014 - Your Name
+                        <p>
+                            Made with <span class="bounceIn animated infinite">♥</span> by <a style="color:#CCB2A3;"href="https://twitter.com/dariel_noel">@dariel_noel</a>.                            
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -388,16 +378,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Spain 2010</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/test.jpg.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/2010.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                            In the final, Spain, the European champions, defeated third-time finalists the Netherlands 1–0 after extra time, with Andrés Iniesta's goal in the 116th minute giving Spain their first world title, becoming the eighth nation to win the tournament, and the first European nation to win the tournament outside its home continent. 
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Host country: <strong>South Africa</strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Best player: <strong>Diego Forlán</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -419,16 +409,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Italy 2006</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/2006.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                Italy won the tournament, claiming their fourth World Cup title. They defeated France 5–3 in a penalty shootout in the final, after extra time had finished in a 1–1 draw. Germany defeated Portugal 3–1 to finish in third place.
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Host country: <strong>Germany</strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Best player: <strong>Zinedine Zidane</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -450,16 +440,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Brazil 2002</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/2002.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                Brazil won the tournament for a record fifth time, beating Germany 2–0 in the final.[1] Turkey beat South Korea 3–2 in the third place match.[2] France were the defending champions but were eliminated in the group stage after earning a single point.
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Host countrys: <strong>South Korea | Japan</strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Best player: <strong>Oliver Kahn</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -481,16 +471,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>France 1998</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/1998.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                The tournament was won by France, who beat Brazil 3–0 in the final. France won their first title, becoming the seventh nation to win a World Cup, and the sixth (after Uruguay, Italy, England, West Germany and Argentina) to win the tournament on home soil.
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Host country: <strong>France</strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Best player: <strong>Ronaldo</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -512,16 +502,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Brazil 1994</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/1994.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                Brazil became the first nation to win four World Cup titles when they beat Italy 3–2 in a penalty shootout after the game ended 0–0 after extra time, the first World Cup final to be decided on penalties. 
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Host country: <strong>United States<a href="http://startbootstrap.com"></a></strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Best player: <strong>Romário</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -543,16 +533,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Germany 1990</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/1990.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                The tournament was won by West Germany, who claimed their third World Cup title by defeating reigning champions Argentina 1–0 in the final, a rematch of the previous final four years earlier.
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Host country: <strong>Italy<a href="http://startbootstrap.com"></a></strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Best player: <strong>Salvatore Schillaci</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -562,6 +552,193 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Argentina 1986</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1986.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                It was won by Argentina (their second title, after winning in 1978). Argentina was captained by Diego Maradona who scored the infamous "Hand of God" goal, as well as another voted "Goal of the Century", in the same quarter-final against England. These were two of the five goals that Maradona scored during the tournament, and he also created another five for his team-mates. Argentina beat West Germany 3–2 in the final at Mexico City's Estadio Azteca.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Host country: <strong>Mexico<a href="http://startbootstrap.com"></a></strong>
+                                </li>
+                                <li>Best player: <strong>Diego Maradona</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Italy 1982</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1982.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                The tournament was won by Italy, after defeating West Germany 3–1 in the final. It was Italy's third World Cup win and first since 1938.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Host country: <strong>Spain</strong>
+                                </li>
+                                <li>Best player: <strong>Paolo Rossi</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Argentina 1978</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1978.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                The 1978 World Cup was won by Argentina who beat the Netherlands 3–1 after extra time in the final. This win was the first World Cup title for Argentina, who became the fifth team (after Uruguay, Italy, England and West Germany), to be both hosts and world champions.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Host country: <strong>Argentina</strong>
+                                </li>
+                                <li>Best player: <strong>Mario Kempes</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Germany 1974</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1974.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                The host nation won the title beating the Netherlands in the final, 2–1. The victory was the second for West Germany, who had also won in 1954.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Host country: <strong>West Germany<a href="http://startbootstrap.com"></a></strong>
+                                </li>
+                                <li>Best player: <strong>Johan Cruyff</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Brazil 1970</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1970.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                The tournament was won by Brazil, who claimed their third World Cup title by defeating another two-time former champion, Italy, 4–1 in the final, thereby winning the right to permanently keep the Jules Rimet Trophy. The victorious team led by Carlos Alberto, and featuring players such as Pelé, Gérson, Jairzinho, Rivelino, and Tostão, is often cited as the greatest-ever World Cup team.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Host country: <strong>Mexico</strong>
+                                </li>
+                                <li>Best player: <strong>Pelé</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>England 1966</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1966.png" class="img-responsive img-centered" alt="">
+                            <p class="text-justify">
+                                England beat West Germany 4–2 in the final, winning the World Cup. With this victory, England won their first FIFA World Cup title and became the third World Cup host to win the tournament after Uruguay in 1930 and Italy in 1934.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Host country: <strong>England</strong>
+                                </li>
+                                <li>Top scorer: <strong>Eusébio</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>

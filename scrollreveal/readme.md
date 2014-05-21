@@ -3,7 +3,7 @@ AniJS - A ScrollReveal Demo
 
 ##Intro 
 
-ScrollReveal is an [AniJS](anijs.github.io) helper function, which allow you to make animation to the scroll elements. If you don't now nothing about [AniJS](anijs.github.io), you can find documentation an examples at the [official site](anijs.github.io).
+ScrollReveal is an [AniJS](anijs.github.io) helper function, that allows you to animate several components when they enter the viewport. If you don't now nothing about [AniJS](anijs.github.io), you can find documentation an examples at the [official site](anijs.github.io).
 
 ##Using 
 
@@ -17,7 +17,7 @@ ScrollReveal is an [AniJS](anijs.github.io) helper function, which allow you to 
 <script src="helpers/anijs-helper-scrollreveal-min.js"></script>
 ```
 
-2 - Add the before helper function Definition with the **scrollReveal** name to all element de los cuales usted espera un scrollReveal behavior. 
+2- Create a declarative sentence with **if** , **on** and **Before** definitions as it is shown in this example:
 
 ```xml
 <div class="item" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal"></div>
@@ -50,8 +50,4 @@ ScrollReveal is an [AniJS](anijs.github.io) helper function, which allow you to 
 </body>
 ```
 
-More details about usar AniJS go to [AniJS Official Website](http://anijs.github.io/#using).
-
-**Would you like to write your own helpers functions?**
-
-Please read about it in [Writing before and after functions ](https://github.com/anijs/anijs/wiki/Writing-before-and-after-functions).
+For more details about how to use AniJS you may go to [AniJS Official Website](http://anijs.github.io/#using). Besides, if yo want to create your own helper functions you may read about it in  [Writing before and after functions ](https://github.com/anijs/anijs/wiki/Writing-before-and-after-functions).
