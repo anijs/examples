@@ -14,7 +14,7 @@ ScrollReveal is an [AniJS](anijs.github.io) helper function, that allows you to 
 <script src="anijs-min.js"></script>
 
 <!-- ScrollReveal Helper -->
-<script src="helpers/anijs-helper-scrollreveal-min.js"></script>
+<script src="helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 ```
 
 2- Create a declarative sentence with **if** , **on** and **Before** definitions as it is shown in this example:
@@ -46,7 +46,7 @@ ScrollReveal is an [AniJS](anijs.github.io) helper function, that allows you to 
     <!-- AniJS Core File -->
     <script src="bower_components/anijs/dist/anijs-min.js"></script>
     <!-- ScrollReveal Helper -->
-    <script src="bower_components/anijs/dist/anijs-helper-scrollreveal-min.js"></script>
+    <script src="bower_components/anijs/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 </body>
 ```
 
